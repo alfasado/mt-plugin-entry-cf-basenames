@@ -1,0 +1,14 @@
+name: EntryCFBasenames
+id:   EntryCFBasenames
+key:  entrycfbasenames
+version: 0.1
+author_link: http://alfasado.net/
+author_name: Alfasado Inc.
+description: <__trans phrase="Entry/Page CustomField basenames loop by order.">
+l10n_class: EntryCFBasenames::L10N
+tags:
+    block:
+        EntryCFBasenames: $entrycfbasenames::EntryCFBasenames::Tags::_hdlr_entrycustomfieldbasenames
+        PageCFBasenames: $entrycfbasenames::EntryCFBasenames::Tags::_hdlr_entrycustomfieldbasenames
+        EntryCustomFieldBasenames: $entrycfbasenames::EntryCFBasenames::Tags::_hdlr_entrycustomfieldbasenames
+        PageCustomFieldBasenames: $entrycfbasenames::EntryCFBasenames::Tags::_hdlr_entrycustomfieldbasenames
