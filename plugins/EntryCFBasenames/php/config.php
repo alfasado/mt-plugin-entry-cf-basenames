@@ -31,7 +31,7 @@ class EntryCFBasenames extends MTPlugin {
                 // PowerCMS.pack
                 $prefs = $entry->prefs;
             }
-            if ( $prefs ) {
+            if (! $prefs ) {
                 $class = $entry->class;
                 $column = $class . '_prefs';
                 $search = '%publish_post%';
@@ -47,6 +47,7 @@ class EntryCFBasenames extends MTPlugin {
             }
             if (! $prefs ) {
                 $repeat = FALSE;
+                $ctx->restore( $localvars );
                 return '';
             }
             $fields = explode( ',', $prefs );
